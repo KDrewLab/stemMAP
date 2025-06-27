@@ -1,0 +1,52 @@
+Input featmat: 12 rows
+                                 ID1  ... pearsonR_Mallam_MES_control
+Frozen_set                            ...                            
+(A0A087WNM5, A0A087WNL7)  A0A087WNM5  ...                         NaN
+(Q8BFW7, Q8C4J7)              Q8C4J7  ...                     -0.0296
+(Q8BFW7, Q8C4B4)              Q8C4B4  ...                     -0.0428
+(Q8BFW7, Q8C4A5)              Q8C4A5  ...                     -0.0716
+(Q8BFW7, Q8C460)              Q8C460  ...                     -0.0575
+
+[5 rows x 5 columns]
+Error!: There are 2 duplicated indices in featmat. Go to https://github.com/marcottelab/leca-proteomics/blob/main/scripts/build_featmat.py
+
+
+Prior predictions: 6 rows
+                     ID1     ID2  prior_prediction
+Frozen_set                                        
+(Q8BFW7, Q8C4J7)  Q8BFW7  Q8C4J7          0.000989
+(Q8BFW7, Q8C4B4)  Q8BFW7  Q8C4B4          0.006089
+(Q8BFW7, Q8C3X8)  Q8BFW7  Q8C3X8          0.003285
+(Q8BFW7, Q8C3X4)  Q8BFW7  Q8C3X4          0.048545
+(Q8C3W1, Q8BFW7)  Q8BFW7  Q8C3W1          0.033565
+Rows in featmat before merging priors :12 should be equal to the rows after merge:12
+                  prior_prediction  ... pearsonR_Mallam_MES_control
+Frozen_set                          ...                            
+(Q8BFW7, Q8C4J7)          0.000989  ...                     -0.0296
+(Q8BFW7, Q8C4B4)          0.006089  ...                     -0.0428
+(Q8BFW7, Q8C3X8)          0.003285  ...                      0.0000
+(Q8BFW7, Q8C3X4)          0.048545  ...                     -0.0447
+(Q8C3W1, Q8BFW7)          0.033565  ...                      0.3830
+
+[5 rows x 6 columns]
+Columns to be calculated priors for:
+ Index(['pearsonR_MES_IEX_mixedbed_20180212', 'pearsonR_Mallam_MES_RNAse',
+       'pearsonR_Mallam_MES_control'],
+      dtype='object')
+Final_prior_added_featmat:
+                                 ID1  ... Prior_pearsonR_Mallam_MES_control
+Frozen_set                            ...                                  
+(Q8BFW7, Q8C4J7)              Q8C4J7  ...                         -0.000029
+(Q8BFW7, Q8C4B4)              Q8C4B4  ...                         -0.000261
+(Q8BFW7, Q8C3X8)              Q8C3X8  ...                          0.000006
+(Q8BFW7, Q8C3X4)              Q8C3X4  ...                         -0.002170
+(Q8C3W1, Q8BFW7)              Q8C3W1  ...                          0.012855
+(Q8C3W1, Q8BFW7)              Q8C3W1  ...                          0.000004
+(Q8C4M7, Q8BFW7)              Q8C4M7  ...                         -0.000700
+(Q8C4M7, Q8BFW7)              Q8C4M7  ...                          0.000005
+(A0A087WNM5, A0A087WNL7)  A0A087WNM5  ...                          0.000002
+(Q8BFW7, Q8C4A5)              Q8C4A5  ...                          0.000003
+(Q8BFW7, Q8C460)              Q8C460  ...                          0.000003
+(Q8BFW7, Q8C436)              Q8C436  ...                          0.000007
+
+[12 rows x 9 columns]
