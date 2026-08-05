@@ -1,4 +1,4 @@
-# MuMap
+# stem.MAP
 Codes used for creating mouse embryonic stem cell protein complex map
 - Make a feature matrix from CF-MS features
 - Map orthologs using inparanoid mapping
